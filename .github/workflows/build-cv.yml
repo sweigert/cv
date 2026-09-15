@@ -1,0 +1,39 @@
+name: Build CV
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "cv.*.md"
+      - "Makefile"
+      - ".github/workflows/build-cv.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install pandoc and TeX Live
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            pandoc texlive-xetex texlive-fonts-recommended texlive-latex-extra fonts-liberation
+
+      - name: Build PDFs
+        run: make MAINFONT="Liberation Sans"
+
+      - name: Publish release with PDFs
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Latest CV build
+          body: Auto-built from the latest push to main. Not a versioned release.
+          make_latest: true
+          files: |
+            cv.de.pdf
+            cv.en.pdf
