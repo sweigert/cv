@@ -7,12 +7,14 @@ MAINFONT ?= Helvetica Neue
 
 PANDOC_FLAGS := \
 	--pdf-engine=xelatex \
+	--template=cv-template.tex \
+	--lua-filter=rule.lua \
 	-V geometry:margin=2.2cm \
 	-V mainfont="$(MAINFONT)" \
 	-V fontsize=11pt \
 	-V colorlinks=true \
-	-V linkcolor=blue \
-	-V urlcolor=blue \
+	-V linkcolor=accent \
+	-V urlcolor=accent \
 	-V linestretch=1.15
 
 .PHONY: all pdf clean de en
@@ -24,7 +26,7 @@ pdf: $(PDFS)
 de: cv.de.pdf
 en: cv.en.pdf
 
-cv.%.pdf: cv.%.md
+cv.%.pdf: cv.%.md cv-template.tex rule.lua
 	pandoc $< -o $@ $(PANDOC_FLAGS)
 
 clean:
