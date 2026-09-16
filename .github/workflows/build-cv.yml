@@ -22,7 +22,16 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
-            pandoc texlive-xetex texlive-fonts-recommended texlive-latex-recommended texlive-latex-extra lmodern fonts-liberation
+            texlive-xetex texlive-fonts-recommended texlive-latex-recommended texlive-latex-extra lmodern fonts-liberation
+
+          # Ubuntu's apt pandoc is too old to ship the partial default-template
+          # files (document-metadata.latex, fonts.latex, ...) that cv-template.tex
+          # references via $name.latex()$ calls, so install a known-good release
+          # directly instead of relying on the distro package.
+          PANDOC_VERSION=3.11
+          curl -fsSL -o /tmp/pandoc.deb \
+            "https://github.com/jgm/pandoc/releases/download/${PANDOC_VERSION}/pandoc-${PANDOC_VERSION}-1-amd64.deb"
+          sudo dpkg -i /tmp/pandoc.deb
 
       - name: Build PDFs
         run: make MAINFONT="Liberation Sans"
