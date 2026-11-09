@@ -1,10 +1,10 @@
 # Stefan Weigert
 
-**Senior Systems & Data Platform Engineer**
+**Senior Engineer · Distributed Systems, Data & ML Platforms**
 
 Dresden, Germany · [weigert.stefan@googlemail.com](mailto:weigert.stefan@googlemail.com) · [LinkedIn](https://www.linkedin.com/in/weigert/) · [GitHub](https://github.com/sweigert)
 
-Senior software engineer bridging distributed systems research and production data platforms, with a track record spanning academic research (PhD, 13 publications), building and leading data science teams, and hands-on IT infrastructure ownership.
+Engineer with a PhD in distributed systems and over ten years of putting data and ML systems into production — real-time fraud detection and recommendations at LOVOO, MLOps in healthcare at AOK PLUS, and today an IoT and time-series platform for robot fleets at WAKU Robotics. Has led a data team of ~20 and stays hands-on.
 
 ---
 

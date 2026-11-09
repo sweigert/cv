@@ -1,10 +1,10 @@
 # Stefan Weigert
 
-**Senior Systems & Data Platform Engineer**
+**Senior Engineer · Verteilte Systeme, Daten- & ML-Plattformen**
 
 Dresden, Germany · [weigert.stefan@googlemail.com](mailto:weigert.stefan@googlemail.com) · [LinkedIn](https://www.linkedin.com/in/weigert/) · [GitHub](https://github.com/sweigert)
 
-Senior Software Engineer an der Schnittstelle von verteilten Systemen und produktiven Datenplattformen, mit Erfahrung in akademischer Forschung (Promotion, 13 Publikationen), im Aufbau und der Führung von Data-Science-Teams sowie in der praktischen Verantwortung für IT-Infrastruktur.
+Promovierter Ingenieur im Bereich verteilte Systeme mit über zehn Jahren Erfahrung darin, Daten- und ML-Systeme in den produktiven Betrieb zu bringen – Real-Time-Fraud-Detection und Recommendation Engine bei LOVOO, MLOps im Gesundheitswesen bei der AOK PLUS und heute eine IoT- und Zeitreihen-Plattform für Roboterflotten bei WAKU Robotics. Erfahrung in der Führung eines rund 20-köpfigen Data-Teams, dabei stets hands-on.
 
 ---
 
