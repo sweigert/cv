@@ -94,6 +94,7 @@ Schwerpunkte: Verteilte Systeme, Datenbanken, Algorithmen & Datenstrukturen
 | Core Engineering | Distributed Systems, High-Throughput Stream Processing, Anomaly Detection, Time-Series Analytics, Edge Computing |
 | Datenbanken & Storage | Enterprise Postgres (PL/pgSQL, RLS), TimeScaleDB, BigQuery, Redis, Vector Databases |
 | IoT & Cloud Infrastructure | MQTT, Kafka, Docker, Kubernetes, Google Cloud Platform (Dataflow, Pub/Sub, Airflow) |
+| Delivery & Operations | GitHub Actions (CI/CD), Ansible, Helm, Prometheus & Grafana, StackGres, Supabase |
 | Sprachen (Programmierung) | Python, Go, SQL/PLpgSQL, C++, R, Bash, Java |
 | Sprachen (Human) | Deutsch (Muttersprache), Englisch (Verhandlungssicher), Französisch (Fließend) |
 
